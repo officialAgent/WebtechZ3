@@ -1,0 +1,70 @@
+body {
+
+
+    background-color: #222831;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231b434b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23145d66' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230e7880' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2307929b' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2300adb5' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+    height: 100vh;
+
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    color: #fffafa;
+
+
+
+}
+
+#infobox {
+    background-color: #393e46;
+    border-radius: 20px;
+}
+
+
+small {
+    color: firebrick;
+    font-size: 1vw;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.btn-grad:hover {
+    background-position: center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.edit{
+    border-radius: 17px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}

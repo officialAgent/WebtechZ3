@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+    <title>Tibor Ládi - Z3</title>
+</head>
+<body>
+
+
+<div class="container ">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h1>Zadanie 3 </h1>
+            <h3>Webové technológie</h3>
+
+
+
+        </div>
+
+
+
+        <div class="col-md-6" id="infobox">
+
+            <!-- action="https://formspree.io/f/xeqpaylq" method="POST"
+            action="mailto:tibififagmail.com?subject=Tibor_Ladi" method="POST" enctype="text/plain"
+               feistu01@gmail.com -->
+            <form  action="mailto:feistu01@gmail.com?subject=Tibor_Ladi" method="POST" enctype="text/plain"  >
+                <h2>Osobné údaje</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group" id="in">
+                            <label for="first">Meno<small>* </small></label>
+                            <input   name="Meno" type="text" class="form-control edit" placeholder="Meno" id="first" required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="last">Priezvisko<small>*</small></label>
+                            <input name="Priezvisko" type="text" class="form-control edit" placeholder="Priezvisko" id="last"
+                                   required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="email">Email <small>*</small></label>
+                            <input name="Email" type="email" class="form-control edit" id="email" placeholder="xxx@yyy.com"
+                                   required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+
+
+                    <!--  col-md-6   -->
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="date">Dátum narodenia <small>*</small></label>
+                            <input name="Datum narodenia" type="date" class="form-control edit" id="date" required>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--  row   -->
+
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="old">Vek <small>*</small></label>
+                            <input name="Vek" type="number" class="form-control edit" id="old" placeholder="18" min="1"
+                                   required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="city">Mesto<small>*</small></label>
+                            <input name="Mesto" type="text" class="form-control edit" id="city" placeholder="Bratislava"
+                                   required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+
+                </div>
+
+                <!--  row   -->
+                <!--  row   -->
+
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="street">Ulica<small>*</small></label>
+                            <input name="Ulica" type="text" class="form-control edit" id="street" placeholder="Hlavna"
+                                   required>
+                        </div>
+                    </div>
+                    <!--  col-md-6   -->
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="hnumber">Čislo domu<small>*</small></label>
+                            <input name="Cislo_domu" type="number" class="form-control edit" id="hnumber" placeholder="155"
+                                   min="1" required>
+                        </div>
+
+                    </div>
+                    <!--  col-md-6   -->
+
+                </div>
+
+                <!--  row   -->
+                <br>
+                <h2>Typ opravy</h2> <br>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="Zaruka" value="Zarucny " onclick="show1();"
+                                       checked>Záručny
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="Zaruka" value="Pozarucny" onclick="show2();"
+                                       checked>Pozáručny
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="after">
+
+                    <br>
+                    <h2>Údaje o výrobku</h2> <br>
+                    <div id="products">
+                        <div class="row  ">
+                            <div class="col-md-4">
+
+                                <div class="form-group">
+                                    <label for="brand">Výrobca</label>
+
+                                    <select class="edit" id="brand" name="Vyrobca">
+                                        <option  value="AEG">AEG</option>
+                                        <option  value="Whirlpool">Whirlpool</option>
+                                        <option  value="Electrolux">Electrolux</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Seria:</label>
+
+                                    <select class="edit" id="AEG" name="AEG-seria">
+                                        <option  value="ProSense">ProSense</option>
+                                        <option  value="Okomix">Okomix</option>
+                                        <option  value="Softwater">Softwater</option>
+                                    </select>
+
+                                    <select class="edit" id="Whirlpool" name="Whirlpool-seria">
+                                        <option  value="FSCR">FSCR</option>
+                                        <option  value="TDLR">TDLR</option>
+                                        <option  value="WWG">WWG</option>
+                                    </select>
+
+                                    <select class="edit" id="Electrolux" name="Electrolux-seria">
+                                        <option  value="PerfectCare6">PerfectCare6</option>
+                                        <option  value="PerfectCare7">PerfectCare7</option>
+                                        <option  value="EWT">EWT</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Model:</label>
+
+                                    <select class="edit" id="FSCR" name="Model">
+                                        <option value="12440">12440</option>
+                                        <option value="90423">90423</option>
+                                        <option value="80415">80415</option>
+                                    </select>
+
+                                    <select class="edit" id="TDLR" name="Model">
+                                        <option value="65210">65210</option>
+                                        <option value="70230">70230</option>
+                                        <option value="60110">60110</option>
+                                    </select>
+
+                                    <select class="edit" id="WWG" name="Model">
+                                        <option value="91484">91484</option>
+                                        <option value="81484">81484</option>
+                                        <option value="71484">71484</option>
+                                    </select>
+
+                                    <select class="edit" id="ProSense" name="Model">
+                                        <option value="L6SE25">L6SE25</option>
+                                        <option value="L7BE68SCA">L7BE68</option>
+                                        <option value="L6SE26CC">L6SE26CC</option>
+                                    </select>
+
+                                    <select class="edit" id="Okomix" name="Model">
+                                        <option value="L8FBC68">L8FBC68</option>
+                                        <option value="L8FEC86C">L8FEC86C</option>
+                                        <option value="L8FEC86C">L8FEC86C</option>
+                                    </select>
+
+                                    <select class="edit" id="Softwater" name="Model">
+                                        <option value="L9FEA69">L9FEA69</option>
+                                        <option value="L9FEA69S">L9FEA69S</option>
+                                        <option value="L9FEC49SC">L9FEC49SC</option>
+                                    </select>
+
+                                    <select class="edit" id="PerfectCare6" name="Model">
+                                        <option value="12440">12440</option>
+                                        <option value="90423">90423</option>
+                                        <option value="80415">80415</option>
+                                    </select>
+
+                                    <select class="edit" id="PerfectCare7" name="Model">
+                                        <option value="65210">65210</option>
+                                        <option value="70230">70230</option>
+                                        <option value="60110">60110</option>
+                                    </select>
+
+                                    <select class="edit" id="EWT" name="Model">
+                                        <option value="91484">91484</option>
+                                        <option value="81484">81484</option>
+                                        <option value="71484">71484</option>
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+                            <!--  col-md-6   --></div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col">
+                            <input type="checkbox" name="Ine" id="outher">
+                            <label> Iné</label><br>
+                        </div>
+                    </div>
+
+
+                    <div id="after2">
+
+                        <div class="row  ">
+                            <div class="col-md-4">
+
+                                <div class="form-group">
+                                    <label>Výrobca</label>
+                                    <input name="Vyrobca ine" type="text" class="after2text form-control" placeholder="AEG">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+
+
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Seria</label>
+                                    <input name="Seria ine" type="text" class="after2text form-control" placeholder="PRO">
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Model</label>
+                                    <input name="Model ine" type="text" class="after2text form-control" placeholder="99999x">
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <br>
+                    <h2>Cas opravy</h2> <br>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="radio ">
+                                <label>
+                                    <input type="radio" name="Cas" value="Vecer"
+                                           checked>Večer
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="Cas" value="Rano"
+                                           checked>Ráno
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <br>
+                <h2>Poznámka</h2> <br>
+                <div class="row">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            <textarea class="form-control" id="textarea" name="textarea" rows="4" cols="40" placeholder="Napíšte poznámku..."></textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="hiddentextarea">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="form-group">
+
+                                <textarea id="hidenarea" name="HidenTextarea" rows="4"
+                                          cols="50">Tibor Ladi-97854</textarea>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="text-center">
+                <button  type="submit" class="btn-grad" id="send">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+    <p>&copy; Copyright </p>
+    <p><br>Tibor Ládi</p>
+    <p><br>FEI STU</p>
+
+
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Érvényes CSS!"/>
+        </a>
+    </p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="Érvényes CSS!"/>
+        </a>
+    </p>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js.js"></script>
+</body>
+</html>
